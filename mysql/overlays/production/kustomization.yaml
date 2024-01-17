@@ -1,0 +1,10 @@
+kind: Kustomization
+
+bases:
+- ../../base
+
+patchesStrategicMerge:
+- route.yaml
+
+commonLabels:
+  env: prod
